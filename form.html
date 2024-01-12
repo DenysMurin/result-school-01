@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <h1>Forms</h1>
+    <form>
+      <div>
+        <!-- text2 связывает вместе -->
+        <label for="text2">Text</label>
+        <!-- можно стереть текст и ввести свой, аналог placeholder -->
+        <input type="text" id="text2" value="текст по умолчанию" />
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="enter email" />
+      </div>
+      <div>
+        <label for="password">Password</label>
+        <input type="password" id="password" />
+      </div>
+      <div>
+        <label for="number">Number</label>
+        <input type="number" id="number" min="0" />
+      </div>
+      <div>
+        <label for="range">range</label>
+        <input type="range" id="range" min="0" max="10" step="2" />
+      </div>
+      <div>
+        <label for="date">Дата</label>
+        <input type="date" id="date" />
+      </div>
+      <div>
+        <label for="color">Цвет</label>
+        <input type="color" id="color" />
+      </div>
+      <div>
+        <label for="message">Сообщение</label>
+        <br />
+        <textarea name="" id="message" cols="15" rows="10"></textarea>
+      </div>
+      <div>
+        <label for="sex">Your sex</label>
+        <select name="" id="sex">
+          <option value="male">Мужчина</option>
+          <!-- выбрана женщина -->
+          <option value="female" selected>Женщина</option>
+          <option value="other">другое</option>
+        </select>
+      </div>
+      <div>
+        <label>Количество работ</label>
+        <!-- благодаря "name/work" есть только один выбор -->
+        <input type="radio" name="work" />1 <input type="radio" name="work" />2
+        <input type="radio" name="work" />5
+        <input type="radio" name="work" />10+
+      </div>
+      <div>
+        <label>собранные овощи</label>
+
+        <input type="checkbox" name="vegetables" />картошка
+        <input type="checkbox" name="vegetables" />капуста
+        <input type="checkbox" name="vegetables" />томаты
+        <input type="checkbox" name="vegetables" />перец
+      </div>
+      <!-- отправляет/подтверждает все выше обозначенные формы -->
+      <input type="submit" value="отправить форму" />
+      <!-- кнопка идентичная выше-->
+      <button type="submit">отправить форму</button>
+    </form>
+  </body>
+</html>
