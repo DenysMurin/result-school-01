@@ -2,24 +2,28 @@ body {
   font-size: 16px;
   font-family: roboto;
   font-weight: 400;
-  background: lightcoral;
+  background: rgb(255, 120, 120);
+  padding: 0;
+  margin: 0;
 }
-
+.info {
+  display: flex;
+}
 .info-text p {
   font-style: italic;
   color: blue;
 }
 .name {
-  background: #ff2301;
+  background: lightcoral;
 }
 .exp {
-  background: green;
+  background: lightgreen;
 }
 .hobby {
-  background: blue;
+  background: lightblue;
 }
 .soc {
-  background: yellow;
+  background: lightyellow;
 }
 .connect {
   background: lightblue;
@@ -29,4 +33,121 @@ body {
   border: 1px solid white;
   margin: 20px;
   padding: 16px;
+}
+.card h2,
+.card h4,
+.card h1 {
+  margin-bottom: 12px;
+  /* border-bottom: 1px solid white; */
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 700px;
+}
+.image {
+  border-radius: 12px;
+  margin: 0 20px;
+  border: 1px solid white;
+  width: 150px;
+  background-size: cover;
+  width: 200px;
+}
+.card li {
+  /* margin-left: 16px; */
+}
+.btn {
+  background: black;
+  color: antiquewhite;
+  border: none;
+  padding: 8px 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.btn:hover {
+  opacity: 0.5;
+  transition: 0.5s;
+}
+.link {
+  text-decoration: none;
+}
+.link:hover {
+  color: #ff2301;
+  text-decoration: underline;
+}
+.link:active {
+  color: black;
+  font-size: 24px;
+}
+.link:visited {
+  color: yellow;
+}
+.table {
+  width: 100%;
+}
+.thead {
+  background: lightpink;
+}
+.table td {
+  padding: 4px;
+}
+.table tr:nth-child(2n) {
+  background: #ff2301;
+}
+.table td:hover {
+  background: yellow;
+}
+.list li {
+  list-style: none;
+  padding: 0 10px;
+  border-bottom: 1px solid red;
+}
+.block {
+  display: block;
+}
+.form h2 {
+  text-align: center;
+}
+.form-row {
+  margin-bottom: 10px;
+  display: flex;
+  gap: 20px;
+}
+.form-row .form-group {
+  width: calc((100% - 20px) / 2);
+}
+.form-row .form-group:last-child {
+  margin-right: 0;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  color: gray;
+}
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  /* background: transparent; */
+  border-bottom: 1px solid black;
+  padding: 15px 0 10px;
+  /* удаляет линию, показывающую фокус */
+  outline: none;
+  font-family: inherit;
+}
+@media (max-width: 560px) {
+  body {
+    background: lawngreen;
+  }
+  .form-row {
+    display: inline;
+  }
+  .info {
+    display: inline;
+  }
+  .soc {
+    text-align: center;
+  }
 }
